@@ -1,0 +1,13 @@
+<h2>BONUS: Random Color</h2>
+
+<ul>
+  <% colorArray(color) => { %>
+      <ul id="box">
+        <li id="hexbox" style="background-color:<%= color.hex %>">
+          <li> <%= color.keyword %> </li>
+          <li> <%= color.hex %> </li>
+        </li>
+      </ul>
+  <%  } %>
+  <% }) %>
+</ul>

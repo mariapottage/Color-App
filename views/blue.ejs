@@ -1,0 +1,16 @@
+<h2>Category: Blue</h2>
+
+<ul>
+  <% colorArray.forEach((color) => { %>
+    <%if (color.category === "blue") { %>
+      <ul id="box">
+        <li id="hexbox" style="background-color:<%= color.hex %>">
+          <li> <%= color.keyword %> </li>
+          <li> <%= color.hex %> </li>
+          <li> <%= color.category %> </li>
+
+        </li>
+      </ul>
+  <%  } %>
+  <% }) %>
+</ul>
