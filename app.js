@@ -49,7 +49,7 @@ app.get('/red', (req, res, next) => {
 // Random's Page
 app.get('/random', (req, res, next) => {
   res.render('random.ejs', {
-  colorArray: colorArray[Math.floor(Math.random()*colorArray.length)]
+  colorRandom: colorArray[Math.floor(Math.random()*colorArray.length)]
 
   });
 });
